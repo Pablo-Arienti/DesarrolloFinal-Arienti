@@ -1,0 +1,48 @@
+.carousel-inner {
+  .carousel-dentro {
+    .carousel1 {
+      background: url(../contenido/home/carousel_food.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h4 {
+      @include titulo_gneral;
+      text-align: center;
+      font-size: 50px;
+      margin-top: 5%;
+    }
+
+    p {
+      @include text_gneral;
+      height: 40%;
+      width: 40%;
+      border-radius: 7px;
+      margin: 5% 0px 10% 30%;
+    }
+
+    .carousel2 {
+      @extend .carousel1;
+      background: url(../contenido/home/carousel_food2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .carousel3 {
+      @extend .carousel1;
+      background: url(../contenido/home/carousel_food3.jpg);
+
+      p {
+        color: $textCol;
+      }
+    }
+  }
+}
+
+.menu-collap {
+  display: flex;
+  justify-content: center;
+}

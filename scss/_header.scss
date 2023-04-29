@@ -1,0 +1,69 @@
+header {
+  padding: 0%;
+  margin: 0%;
+
+  nav {
+    div {
+      a {
+        h1 {
+          @include titulo_gneral;
+          -webkit-animation: titul 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: titul 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        }
+      }
+
+      div {
+        ul {
+          li {
+            font-family: $fuentetext;
+            list-style-type: none;
+
+            a {
+              p {
+                color: $textCol;
+
+                &:hover {
+                  color: $primary1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .dropdown-menu {
+        background: linear-gradient(233deg,
+            rgba(138, 94, 8, 1) 35%,
+            rgba(171, 118, 15, 1) 100%);
+      }
+    }
+  }
+}
+
+@-webkit-keyframes titul {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes titul {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
