@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta's-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />´
+    <meta name="description" content="Reserva una mesa en nuestro restaurante gourmet en pocos clicks. Disfruta de una experiencia culinaria excepcional en un ambiente sofisticado. Nuestro proceso de reserva fácil y rápido te garantiza una mesa para disfrutar de nuestros platos exquisitos preparados con ingredientes frescos y de calidad. ¡Haz tu reserva hoy mismo y experimenta nuestro servicio de clase mundial!">
+    <meta name="author" content="Pablo Arienti">
+     <!--Icon Head-->
+  <link rel="shortcut icon" href="../contenido/home/head_png.png">
+    <!--Font's-->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poltawski+Nowy:ital@1&display=swap"
+        rel="stylesheet" />
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Link Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <title>Reserva | La Bistecca</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <h1>La Bistteca</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" aria-current="page" href="../index.html">
+                                <p>Inicio </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="./menu.html">
+                                <p>Menu</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active text-warning" href="#">
+                                Reserva
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <p>Sobre nosotros</p>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item"
+                                        href="https://www.instagram.com/labisteccapastagrill/?hl=es">Galeria</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./configuration.html">Configuración</a></li>
+                                <li><a class="dropdown-item" href="./contacto.html">Conocenos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="ms-auto d-none d-lg-inline-flex">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-warning h5" href="./configuration.html" target="blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-gear" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                                    <path
+                                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedorform">
+        <form class="form">
+            <div class="formsection">
+                <input type="text" placeholder="Nombre y Apellido" class="forminput">
+            </div>
+            <div class="formsection">
+                <input type="text" placeholder="Número de celular" class="forminput">
+            </div>
+            <div class="formsection">
+                <input type="date" class="forminput">
+            </div>
+            <div class="formsection-hour d-flex row justify-content-around mt-4">
+                <button type="button" class="btn btn-secondary col-2" data-bs-toggle="button">20:00</button>
+                <button type="button" class="btn btn-secondary col-2" data-bs-toggle="button">21:00</button>
+                <button type="button" class="btn btn-secondary col-2" data-bs-toggle="button">22:00</button>
+                <button type="button" class="btn btn-secondary col-2" data-bs-toggle="button">23:00</button>
+            </div>
+            <div class="formsection mt-4">
+                <button type="submit" class="forminputbottom" > <a href="./error404.html">Reserve ahora</a> </button>
+            </div>
+        </form>
+    </div>
+    <footer class="mt-5 pt-1 pb-1 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Estimado/a cliente</h2>
+                    <p class="pr-5">Agradecemos su visita a Bistecca y su elección de disfrutar nuestra gastronomía.
+                        Esperamos
+                        haber superado sus expectativas y que haya disfrutado de su experiencia con nosotros. ¡Gracias
+                        por su
+                        preferencia y esperamos verle pronto de nuevo!</p>
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Seguinos</h4>
+                    <ul class="m-0 p-0">
+                        <li>+ <a href="https://twitter.com/labistecca">Twitter</a></li>
+                        <li>+ <a href="https://www.facebook.com/LaBisteccaPastaGrill/?locale=es_LA">Facebook</a></li>
+                        <li>+ <a href="https://www.instagram.com/labisteccapastagrill/?hl=es">Instagram</a></li>
+                        <li>+ <a
+                                href="http://elviciodecomer.blogspot.com/2008/02/la-bistecca-o-la-gula-hecha-buffett.html">Blog</a>
+                        </li </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-4">Localización</h4>
+                    <p>Av. Alicia Moreau de Justo 1890, C1184 CABA</p>
+                    <p class="mb-1">(011) 4514-4998</p>
+                    <p>reservasweb@laparolaccia.com</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p><small class="text-white-50">© 2023. Todos los derechos reservados.</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
