@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Meta's-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personaliza tu experiencia en nuestro restaurante gourmet con nuestra página de configuración. Selecciona tus platos y bebidas favoritos, ajusta tus preferencias dietéticas y elige tu asiento preferido. En nuestro restaurante, la satisfacción del cliente es nuestra máxima prioridad, por lo que te ofrecemos la posibilidad de crear la experiencia gastronómica perfecta. ¡Haz tu reserva ahora y configura tu experiencia en nuestro restaurante gourmet!">
+  <meta name="author" content="Pablo Arienti">
+  <!--Icon Head-2-->
+  <link rel="shortcut icon" href="../contenido/home/config-head.png">
+  <!--Font's-->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poltawski+Nowy:ital@1&display=swap"
+    rel="stylesheet" />
+  <!-- Link CSS-->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Link Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <title>Configuración | La Bistecca</title>
+</head>
+
+<body class="bod-config">
+  <header>
+    <nav>
+      <div class="text-center d-flex justify-content-center">
+        <a class="navbar-brand" href="../index.html">
+          <h1 class="mt-2">La Bistteca</h1>
+        </a>
+    </nav>
+  </header>
+  <nav class="nav-configuration">
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active bg-warning bg-opacity-50" id="list-home-list" data-bs-toggle="list"
+            href="#list-home" role="tab" aria-controls="list-home">Perfil</a>
+          <a class="list-group-item list-group-item-action bg-warning bg-opacity-50" id="list-profile-list" data-bs-toggle="list"
+            href="#list-profile" role="tab" aria-controls="list-profile">Notificaciones</a>
+          <a class="list-group-item list-group-item-action bg-warning bg-opacity-50" id="list-messages-list" data-bs-toggle="list"
+            href="#list-messages" role="tab" aria-controls="list-messages">Idioma</a>
+          <a class="list-group-item list-group-item-action bg-warning bg-opacity-50" id="list-settings-list" data-bs-toggle="list"
+            href="#list-settings" role="tab" aria-controls="list-settings">Configuración</a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <form>
+              <div class="text-center">
+                <h3>Inicia Sesión</h3>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" value="test@example.com"
+                  aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">
+                  <p> Nunca vamos a compartir tus datos a nadie</p>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check d-flex justify-content-around column sesion">
+                <div class="input-no-volver">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">No volver a preguntar</label>
+                </div>
+                <div>
+                  <a href="./error404.html">Olvide mi contraseña</a>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
+            </form>
+            <form>
+              <div class="text-center">
+                <h3>Registrate</h3>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" value="test@example.com"
+                  aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">
+                  <p> Nunca vamos a compartir tus datos a nadie</p>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Repetir contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">Crear</button>
+            </form>
+          </div>
+
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <div class="list-group list-group-light">
+              <li class="list-group-item">
+                <button type="button" class="btn btn-primary position-relative">
+                  Correo
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample1" />
+                <label class="form-check-label" for="checkboxExample1">Notificarme por el navegador la novedades</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample2" />
+                <label class="form-check-label" for="checkboxExample2">Se puede utilizar mi correo electronico para
+                  enviarme notificaciones</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample3" />
+                <label class="form-check-label" for="checkboxExample3">Notificarme si confirmo reserva el dia de mi
+                  cumpleaños a las: <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>19:00</option>
+                    <option value="1">20:00</option>
+                    <option value="2">21:00</option>
+                    <option value="3">22:00</option>
+                  </select></label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample4" />
+                <label class="form-check-label" for="checkboxExample4">Autocompletar inicios de sesión y
+                  contraseñas</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample5" />
+                <label class="form-check-label" for="checkboxExample5">Cookies de sitio aceptados</label>
+              </li>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4 mb-3">
+              <button class="btn btn-primary me-md-2" type="button">Confirmar</button>
+              <button class="btn btn-danger" type="button">Cancelar</button>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio"
+                  checked>
+                <label class="form-check-label" for="firstRadio">Español</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                <label class="form-check-label" for="secondRadio">English</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                <label class="form-check-label" for="thirdRadio">Français</label>
+              </li>
+              <!-- A partir de aca hay que hacer click fijo en el punto del idioma-->
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                <label class="form-check-label" for="thirdRadio">中国人</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                <label class="form-check-label" for="thirdRadio">عرب</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                <label class="form-check-label" for="thirdRadio">Português</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                <label class="form-check-label" for="thirdRadio">Latinus</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                <label class="form-check-label" for="thirdRadio">日本</label>
+              </li>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4 mb-3">
+                <button class="btn btn-primary me-md-2" type="button">Confirmar</button>
+                <button class="btn btn-danger" type="button">Cancelar</button>
+              </div>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <div class="list-group list-group-light">
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample3" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-circle-half" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                </svg><b> Tema para la pagina (oscuro/claro)</b>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample3" />
+                <label class="form-check-label" for="checkboxExample2"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-puzzle-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M3.112 3.645A1.5 1.5 0 0 1 4.605 2H7a.5.5 0 0 1 .5.5v.382c0 .696-.497 1.182-.872 1.469a.459.459 0 0 0-.115.118.113.113 0 0 0-.012.025L6.5 4.5v.003l.003.01c.004.01.014.028.036.053a.86.86 0 0 0 .27.194C7.09 4.9 7.51 5 8 5c.492 0 .912-.1 1.19-.24a.86.86 0 0 0 .271-.194.213.213 0 0 0 .036-.054l.003-.01v-.008a.112.112 0 0 0-.012-.025.459.459 0 0 0-.115-.118c-.375-.287-.872-.773-.872-1.469V2.5A.5.5 0 0 1 9 2h2.395a1.5 1.5 0 0 1 1.493 1.645L12.645 6.5h.237c.195 0 .42-.147.675-.48.21-.274.528-.52.943-.52.568 0 .947.447 1.154.862C15.877 6.807 16 7.387 16 8s-.123 1.193-.346 1.638c-.207.415-.586.862-1.154.862-.415 0-.733-.246-.943-.52-.255-.333-.48-.48-.675-.48h-.237l.243 2.855A1.5 1.5 0 0 1 11.395 14H9a.5.5 0 0 1-.5-.5v-.382c0-.696.497-1.182.872-1.469a.459.459 0 0 0 .115-.118.113.113 0 0 0 .012-.025L9.5 11.5v-.003l-.003-.01a.214.214 0 0 0-.036-.053.859.859 0 0 0-.27-.194C8.91 11.1 8.49 11 8 11c-.491 0-.912.1-1.19.24a.859.859 0 0 0-.271.194.214.214 0 0 0-.036.054l-.003.01v.002l.001.006a.113.113 0 0 0 .012.025c.016.027.05.068.115.118.375.287.872.773.872 1.469v.382a.5.5 0 0 1-.5.5H4.605a1.5 1.5 0 0 1-1.493-1.645L3.356 9.5h-.238c-.195 0-.42.147-.675.48-.21.274-.528.52-.943.52-.568 0-.947-.447-1.154-.862C.123 9.193 0 8.613 0 8s.123-1.193.346-1.638C.553 5.947.932 5.5 1.5 5.5c.415 0 .733.246.943.52.255.333.48.48.675.48h.238l-.244-2.855z" />
+                  </svg> <b> Agregar extencion en mi navegador </b></label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample4" />
+                <label class="form-check-label" for="checkboxExample4">Vincular redes sociales con la web</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input" type="checkbox" value="" id="checkboxExample5" />
+                <label class="form-check-label" for="checkboxExample5">Sincronizar datos con el navegdor</label>
+              </li>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4 mb-3">
+              <button class="btn btn-primary me-md-2" type="button">Confirmar</button>
+              <button class="btn btn-danger" type="button">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <nav class="pt-1 pb-1 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 about-company">
+          <h2>Estimado/a cliente</h2>
+          <p class="pr-5">Agradecemos su visita a Bistecca y su elección de disfrutar nuestra gastronomía. Esperamos
+            haber superado sus expectativas y que haya disfrutado de su experiencia con nosotros. ¡Gracias por su
+            preferencia y esperamos verle pronto de nuevo!</p>
+        </div>
+        <div class="col-lg-3 col-xs-12 links">
+          <h4 class="mt-lg-0 mt-sm-3">Seguinos</h4>
+          <ul class="m-0 p-0">
+            <li>+ <a href="https://twitter.com/labistecca">Twitter</a></li>
+            <li>+ <a href="https://www.facebook.com/LaBisteccaPastaGrill/?locale=es_LA">Facebook</a></li>
+            <li>+ <a href="https://www.instagram.com/labisteccapastagrill/?hl=es">Instagram</a></li>
+            <li>+ <a href="http://elviciodecomer.blogspot.com/2008/02/la-bistecca-o-la-gula-hecha-buffett.html">Blog</a>
+            </li </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12 location">
+          <h4 class="mt-lg-0 mt-sm-4">Localización</h4>
+          <p>Av. Alicia Moreau de Justo 1890, C1184 CABA</p>
+          <p class="mb-1">(011) 4514-4998</p>
+          <p>reservasweb@laparolaccia.com</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col copyright">
+          <p class=""><small class="text-white-50">© 2023. Todos los derechos reservados.</small></p>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+.carousel-menu {
+    margin-bottom: 40px;
+
+    .carousel-menu1 {
+        background-image: url(../contenido/menu/carrousel-postre.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .carousel-menu2 {
+        @extend .carousel-menu1;
+        background-image: url(../contenido/menu/carrousel-entrada.jpg);
+    }
+
+    .carousel-menu3 {
+        @extend .carousel-menu1;
+        background-image: url(../contenido/menu/carrousel-principal.jpg);
+    }
+}
+
+.multi-collapse {
+    p {
+        @include text_gneral2;
+    }
+
+    h5 {
+        font-family: $fuentetext;
+        color: $textCol;
+    }
+}
+
+.menu-collap {
+
+    a,
+    button {
+        @include text_gneral2;
+
+    }
+}
+
+.menu-item img {
+    height: 50%;
+    width: 60%;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 990px) {
+    .carousel-menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .multi-collapse {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .multi-collapse {
+        .menu-item {
+            overflow-y: auto;
+            scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+            scrollbar-width: thin;
+            img {
+                height: 25%;
+                width: 40%;
+            }
+        }
+    }
+}
