@@ -1,0 +1,120 @@
+.bod-config {
+  background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(94, 94, 106, 1) 35%, rgba(181, 182, 182, 1) 100%);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+
+  .sesion {
+    a {
+      text-decoration: none;
+      color: $textCol2;
+
+      &:visited {
+        text-decoration: none;
+        color: $textCol2;
+      }
+    }
+  }
+
+  .nav-configuration {
+    padding: 5% 0px;
+    margin-left: 12%;
+
+    .list-group-item {
+      background-color: #dfd9d9
+    }
+  }
+}
+
+.tab-content {
+  padding: 15px;
+  border-radius: 10px;
+  color: $textCol2;
+  background: $grey_opaco;
+
+  p {
+    color: $textCol2;
+  }
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 20px;
+
+  h2,
+  h4 {
+    color: $primary2;
+  }
+
+  .copyright {
+    text-align: center;
+
+    p {
+      color: $textCol;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .links {
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+
+      li a {
+        color: $textCol;
+        transition: color 0.2s;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+          color: $primary1;
+        }
+      }
+    }
+  }
+
+  .about-company,
+  .location {
+    text-align: center;
+  }
+
+  .menu-collap {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 990px) {
+  .nav-configuration {
+    margin-left: 5%;
+  }
+
+  .list-group-item-action {
+    font-size: 12px;
+  }
+
+  .bod-config {
+    .col-6 {
+      .sesion {
+        flex-direction: column;
+
+        a {
+          font-size: 12px;
+          color: $bgeneral;
+        }
+
+        .input-no-volver {
+          font-size: 12px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+    }
+  }
+}
